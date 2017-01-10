@@ -1,4 +1,4 @@
-package r7sy.FinishWithResult;
+package r7sy;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.PluginResult;

@@ -20,6 +20,13 @@ FinishWithResult.prototype.setResult = function (uri, onSuccess, onFail) {
 };
 
 
+console.log("initilizing FinshWithResult Plugin");
 // Register the plugin
 var FinishWithResultObj = new FinishWithResult();
 module.exports = FinishWithResultObj;
+if (!window.plugins) {
+    window.plugins = {};
+}
+if (!window.plugins.FinishWithResultObj) {
+    window.plugins.FinishWithResultObj = FinishWithResultObj;
+}

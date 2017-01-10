@@ -17,14 +17,15 @@
     <keywords>intent,activity,result,finish</keywords>
 
 
-    <js-module src="www/FinishWithResult.js" name="FinishWithResult">
-        <clobbers target="cordova.plugins.FinishWithResult" />
-    </js-module>
-
 
     <!-- Android -->
     <platform name="android">
-        <source-file src="src/android/FinishWithResult.java" target-dir="src/r7sy/cordova/FinishWithResult" />
+	    <js-module src="www/FinishWithResult.js" name="FinishWithResult">
+        <clobbers target="FinishWithResult" />
+    </js-module>
+
+
+        <source-file src="src/android/FinishWithResult.java" target-dir="src/r7sy/" />
 <config-file target="res/xml/config.xml" parent="/*">
             <feature name="FinishWithResult" >
                 <param name="android-package" value="r7sy.FinishWithResult"/>
