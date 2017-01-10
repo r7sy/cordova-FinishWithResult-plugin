@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="cordova-FinishWithResult-plugin"
+    version="0.0.1">
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+    <name>FinishWithResult</name>
+
+    <description> Plugin To Set Activity Result and Finish  for Cordova Android Only</description>
+
+    <author>Radwan Salem Diab</author>
+
+    <keywords>intent,activity,result,finish</keywords>
+
+
+    <js-module src="www/FinishWithResult.js" name="FinishWithResult">
+        <clobbers target="cordova.plugins.FinishWithResult" />
+    </js-module>
+
+
+    <!-- Android -->
+    <platform name="android">
+        <source-file src="src/android/FinishWithResult.java" target-dir="src/r7sy/cordova/FinishWithResult" />
+<config-file target="res/xml/config.xml" parent="/*">
+            <feature name="FinishWithResult" >
+                <param name="android-package" value="r7sy.FinishWithResult"/>
+            </feature>
+        </config-file>
+    </platform>
+
+
+
+</plugin>

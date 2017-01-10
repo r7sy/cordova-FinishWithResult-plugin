@@ -1,1 +1,1 @@
-# cordova-FinishWithResult-plugin
+FinishWithResult Plugin for cordova apps .
